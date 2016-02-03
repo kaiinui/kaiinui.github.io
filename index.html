@@ -73,25 +73,38 @@
             font-size: 18px;
         }
 
-        ul.articles {
-            font-size: 24px;
+        .abilities {
+            line-height: 1.8;
         }
-        ul.articles .date {
-            font-size: 16px;
-            color: #aaa;
-            margin-right: 12px;
-        }
-        ul.articles li {
-            margin-bottom: 18px;
-        }
-        @media screen and (max-width: 340px) {
-            .articles .date {
-                display: block;
-            }
+        .abilities span {
+            background: darkred;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
         }
 
         .lists li {
             line-height: 1.8em;
+        }
+        .lists .date {
+            color: #333;
+        }
+        .lists .weak {
+            color: #333;
+        }
+        .pseudolink {
+            text-decoration: underline;
+        }
+        @media (max-width: 640px) {
+            .ifmob-br {
+                display: block;
+            }
+            .articles li {
+                padding-bottom: .5em;
+            }
+            .lists .weak {
+                font-size:.8em;
+            }
         }
     </style>
 </head>
@@ -100,34 +113,28 @@
     <a href="/">ka<span class="p4">i</span>inui</a>
 </div>
 <p class="lead">Android, iOS, App Engine Engineer</p>
-<h2>Talks</h2>
-<ul class="articles">
-    <li>
-        <span class="date">2014.08.23</span>
-        <a href="https://speakerdeck.com/kaiinui/hei-mo-shu-to-annotation-to-aspectj">AspectJ で黒魔術（増補版）</a>
-    </li>
-    <li>
-        <span class="date">2014.08.20</span>
-        <a href="https://speakerdeck.com/kaiinui/black-magic-in-java">AspectJ で黒魔術</a>
-    </li>
-    <li>
-        <span class="date">2014.07.30</span>
-        <a href="https://speakerdeck.com/kaiinui/apikai-fa-zi-dong-hua-toliang-chan">API の開発自動化と量産</a>
-    </li>
-</ul>
-<h2>Open Sources</h2>
-<ul class="lists">
-    <li><a href="https://github.com/kaiinui/KIChameleonView">KIChameleonView</a> is a magical image view.</li>
-    <li><a href="https://github.com/kaiinui/KIInPlaceEdit">KIInPlaceEdit</a> enables users to edit a label in the place.</li>
-    <li><a href="https://github.com/kaiinui/KIProgressView">KIProgressView</a> is a Medium, Youtube-like progress bars!</li>
-    <li><a href="https://github.com/kaiinui/opensources">Others</a></li>
-</ul>
+<h2>Ability</h2>
+<p class="abilities"><span>Backend</span> <span>Infrastructure</span> <span>User Interface</span> <span>Performance Eng.</span></p>
+<p class="abilities"><span>Java</span> <span>Go</span> <span>Objective-C</span> <span>JavaScript</span> <span>Ruby</span> <span>HTML/CSS</span></p>
 <h2>Writings</h2>
 <ul class="lists">
-    <li><a href="http://kaiinui.hatenablog.com/">kaiinui.hatenablog.com</a> (技術系)</li>
-    <li><a href="https://medium.com/@bittervalley">Medium</a> (めも)</li>
+    <li><a href="http://kaiinui.hatenablog.com/">kaiinui.hatenablog.com</a> <span class="weak">技術系</span></li>
+    <li><a href="https://medium.com/@bittervalley">Medium</a> <span class="weak">めも</span></li>
     <li><a href="http://qiita.com/kaiinui">Qiita</a></li>
     <li><a href="http://kaiinui.svbtle.com/">kaiinui.svbtle.com</a></li>
+</ul>
+<h2>Articles</h2>
+<ul class="lists articles">
+    <li><span class="date">2015/10/14</span> <a href="http://kaiinui.hatenablog.com/entry/2015/10/14/202012">時間ないけどスプラトゥーンでS+になる</a><span class="ifmob-br"></span> <span class="weak">.96ガロンデコでS+になる方法を書きました</span></li>
+    <li><span class="date">2015/05/13</span> <a href="http://kaiinui.hatenablog.com/entry/2015/05/13/164721">デバッグ用にNSLogとCoreDataのダンプを送信する</a><span class="ifmob-br"></span> <span class="weak">ユーザサポートからのデバッグがラクになる魔法のコードを書きました</span></li>
+    <li><span class="date">2015/05/07</span> <a href="http://kaiinui.hatenablog.com/entry/2015/05/07/084502">Facebookの高速ページ表示を支えるBigPipe</a> <span class="ifmob-br"></span> <span class="weak">Facebookの高速ページ表示技術BigPipeをサーベイしました</span></li>
+    <li><span class="date">XXXX/XX/XX</span> <span class="pseudolink">ViewControllerの整理に効くHelperオブジェクトパターン</span> <span class="ifmob-br"></span> <span class="weak">書くかもしれません</span></li>
+</ul>
+<h2>Portfolio</h2>
+<ul class="lists">
+    <li><a href="http://getpool.me/">POOL</a> <span class="weak">iOS Current work</span></li>
+    <li><a href="http://minitest.info/enneagram/">スワイプ診断</a> <span class="weak">Tinder-like UIの習作</span></li>
+    <li><a href="http://kaiinui.com/springui/">「ばね」による物理UIの習作</a> <span class="weak">物理的UIの習作</span></li>
 </ul>
 <h2>Accounts</h2>
 <ul class="lists">
